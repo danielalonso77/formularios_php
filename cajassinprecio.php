@@ -157,104 +157,20 @@ td {
         </tbody>
     </table>
 
-
-
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th colspan="9" scope="col" class="titulos">Información de Archivo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-
-            </tr>
-            <tr>
-                <td colspan="1"><b>Ubicación</b>
-                </td>
-                <td colspan="1"><b>Prueba de color</b> {¿Requiere prueba de color?:41}</p>
-                </td>
-            <tr>
-                <p> Medida Final </p>
-                <td colspan="1">
-                    <b>Base (cm)</b>{Medida Final Base (cm):79}
-                </td>
-                <td colspan="1">
-                    <b>Altura (cm)</b>{Medida Final Altura (cm):80}
-                </td>
-            </tr>
-            </tr>
-
-            [gravityforms action="conditional" merge_tag="{Cantidad - (1) - Italiano:109}" condition="isnot" value=""]
-            <tr>
-
-            </tr>
-        </tbody>
-    </table>
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th colspan="9" scope="col" class="titulos">Revistas</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr colspan="2">
-                <td scope="col"><b>Numero total de páginas</b> {Número total de páginas (Forros + Interiores):51}
-                </td>
-                <td scope="col"><b>Tipo de encuadernado</b> {Tipo de Encuadernado:50}
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1"><b>Acabado</b> {Acabado:3}
-                </td>
-                <td colspan="1"><b>Embolsado</b> {¿Requiere Embolsado?:44}
-                </td>
-            </tr>
-        </tbody>
-
-    </table>
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th colspan="9" scope="col" class="titulos">Portada</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="1"><b>Tipo de papel</b> {Tipo de papel de la portada*:52}
-                </td>
-                <td colspan="1"><b>Número de páginas</b> {Número de páginas de portada:49}
-                </td>
-                <td colspan="1"><b>Tintas</b> {Tintas de portada:53}
-
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1"><b>Recubrimiento Barniz</b> {Recubrimiento de Portada:54}
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1"><b>Acabados especiales</b> {Acabados especiales de portada:55}
-                </td>
-            </tr>
-        </tbody>
-
-    </table>
+    
     <!---- Infomracion de Archivos ---->
 
     <table class="table">
         <thead class="thead-dark">
             <tr>
-                <th colspan="9" scope="col" class="titulos">Infomracion de Archivos</th>
+                <th colspan="9" scope="col" class="titulos">Información de Archivos</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td colspan="1"><b>Ubicación</b> {Opciones:150}
                 </td>
-                <td colspan="1"><b>Prueba de color</b> {¿Requiere prueba de color?:41}
-                </td>
-            </tr>
+               
             <tr>
                 <td>
                     <b>Fecha</b>{Fecha:151}
@@ -262,9 +178,9 @@ td {
 
             </tr>
             <tr>
-                <td>
+                <tr>
                     <b>Medida Final</b>
-                </td>
+                </tr>
                 <td>
                     <b>Base (cm)</b>{Medida Final Base (cm):153}
                 </td>
@@ -280,6 +196,7 @@ td {
     <!---  Finaliza Informacion de Archivos ---->
 
     <!---- Cajas ---->
+    [gravityforms action="conditional" merge_tag="{¿Cuantas caras impresas tendra?:145}" condition="isnot" value=""]
 
     <table class="table">
         <thead class="thead-dark">
@@ -307,7 +224,7 @@ td {
         </tbody>
     </table>
 
-
+    [/gravityforms]
     <!------------------------- Cantidad  ------------------------------>
 
 
@@ -358,13 +275,15 @@ td {
         </thead>
         <tbody>
             <tr colspan="2">
-                <td colspan="1">Todo trabajo requiere el 50% de anticipo
+                <td colspan="1"><b>
+                Todo trabajo requiere el 50% de anticipo
                     La cantidad entregada puede variar entre +/- 5%
                     Cambio de precios sin previo aviso por error u omisión de materiales
                     Los diseños que requieran modificación tendrán un costo adicional.
                     Vigencia de la cotización 30 días hábiles
+                </b>
                 </td>
-                <td colspan="1">
+                <td colspan="2">
 
                 </td>
 
@@ -383,6 +302,7 @@ td {
 
     <!------------------------- NO Hay Costos  ------------------------------>
     
+    [gravityforms action="conditional" merge_tag="{Planeación de producción:98}" condition="isnot" value=""]
         <!------------------------- Produccion  ------------------------------>
         <table class="table border">
             <thead class="thead-dark">
@@ -511,4 +431,5 @@ td {
         </table>
 
         <!------------------------- Finaliza Produccion  ------------------------------>
+        [/gravityforms]
 </div>
