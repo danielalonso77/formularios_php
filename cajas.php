@@ -240,6 +240,72 @@ td {
         </tbody>
 
     </table>
+    <!---- Infomracion de Archivos ---->
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="9" scope="col" class="titulos">Infomracion de Archivos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1"><b>Ubicación</b> {Opciones:150}
+                </td>
+                <td colspan="1"><b>Prueba de color</b> {¿Requiere prueba de color?:41}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Fecha</b>{Fecha:151}
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Medida Final</b>
+                </td>
+                <td>
+                    <b>Base (cm)</b>{Medida Final Base (cm):153}
+                </td>
+                <td>
+                    <b>Altura (cm)</b>{Medida Final Altura (cm):154}
+
+        </tbody>
+    </table>
+
+
+
+
+    <!---  Finaliza Informacion de Archivos ---->
+
+    <!---- Cajas ---->
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="9" scope="col" class="titulos">Cajas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1"><b>Numero de caras impresas:</b> {¿Cuantas caras impresas tendra?:145}
+                </td>
+                <td colspan="1"><b>Tipo de papel:</b> {Tipo de Papel:146}
+                </td>
+                <td colspan="1"><b>Acabado:</b> {Acabado:3}
+            </tr>
+            <tr>
+                <td colspal="1"><b>Tintas de cara (1)</b>{Tintas de cara (1):156}</td>
+                <td colspal="1"><b>Recubrimiento de cara (1)</b>{Recubrimiento de cara (1):157}</td>
+                <td colspal="1"><b>Acabado especial (1)</b>{Acabado especial (1):158}</td>
+            </tr>
+            <tr>
+                <td colspal="1"><b>Tintas de cara (2)</b>{Tintas de cara (2):162}</td>
+                <td colspal="1"><b>Recubrimiento de cara (2)</b>{Recubrimiento de cara (2):163}</td>
+                <td colspal="1"><b>Acabado especial (2)</b>{Acabado especial (2):164}</td>
+        </tbody>
+    </table>
 
 
     <!------------------------- Cantidad  ------------------------------>
@@ -254,7 +320,7 @@ td {
         </thead>
         <tbody>
             <tr>
-                <td colspan="1"><b>Cantidad Solicitada</b> {Cantidad solicitada:13}
+                <td colspan="1"><b>Cantidad Solicitada</b> {Cantidad solicitada:148}
                 </td>
 
             </tr>
